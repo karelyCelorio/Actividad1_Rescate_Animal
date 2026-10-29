@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Consulta estructural de rescates de animales en una tabla HTML5.">
+  <title>Consultar rescates | Sistema de Rescate y Adopción</title>
+</head>
+<body>
+  <header>
+    <h1>Sistema de Control de Rescate y Adopción</h1>
+    <nav aria-label="Navegación principal">
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="reportar.html">Reportar rescate</a></li>
+        <li><a href="rescates.html" aria-current="page">Consultar rescates</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section aria-labelledby="titulo-consulta">
+      <h2 id="titulo-consulta">Listado de rescates</h2>
+      <article>
+        <h3>Casos de ejemplo</h3>
+        <p>Registros ilustrativos para demostrar la estructura de consulta del sistema.</p>
+      </article>
+      <table>
+        <caption>Rescates registrados (datos de ejemplo)</caption>
+        <thead>
+          <tr>
+            <th scope="col">Código</th>
+            <th scope="col">Animal</th>
+            <th scope="col">Fecha</th>
+            <th scope="col">Ubicación</th>
+            <th scope="col">Estado</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">R-001</th>
+            <td>Perro</td>
+            <td><time datetime="2026-10-20">20/10/2026</time></td>
+            <td>Chone, Manabí</td>
+            <td>En atención</td>
+          </tr>
+          <tr>
+            <th scope="row">R-002</th>
+            <td>Gato</td>
+            <td><time datetime="2026-10-22">22/10/2026</time></td>
+            <td>Portoviejo, Manabí</td>
+            <td>Rescatado</td>
+          </tr>
+          <tr>
+            <th scope="row">R-003</th>
+            <td>Perro</td>
+            <td><time datetime="2026-10-24">24/10/2026</time></td>
+            <td>Manta, Manabí</td>
+            <td>Pendiente</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+    <section aria-labelledby="estados">
+      <h2 id="estados">Interpretación de estados</h2>
+      <dl>
+        <dt>Pendiente</dt>
+        <dd>Reporte recibido y aún no atendido.</dd>
+        <dt>En atención</dt>
+        <dd>El animal está siendo evaluado o atendido.</dd>
+        <dt>Rescatado</dt>
+        <dd>El rescate se ha completado.</dd>
+      </dl>
+      <p><a href="reportar.html">Reportar otro rescate</a></p>
+    </section>
+  </main>
+  <footer>
+    <p>Proyecto académico | Unidad 2: Introducción a aplicaciones web</p>
+  </footer>
+</body>
+</html>
